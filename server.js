@@ -18,6 +18,12 @@ import {dbConnection} from '../api-admin-cms/src/config/dbConfig.js'
 dbConnection()
 
 // routers
+// User Routers
+import userRouter from './src/routers/adminRouters.js'
+app.use('/api/v1/user',userRouter)
+
+
+
 app.get('/',(req,res,next)=>{
     res.json({
         message:"You have reached the admin api"

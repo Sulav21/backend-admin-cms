@@ -1,3 +1,15 @@
 ### root domain test
 
 GET http://localhost:8000
+
+###
+POST http://localhost:8000/api/v1/user
+Content-Type: application/json
+
+{
+    "fName":"Sulav",
+    "lName":"Adhiakri",
+    "phone":"1231232321",
+    "email":"a@a.com",
+    "password":"1234567890"
+}
