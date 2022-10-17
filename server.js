@@ -13,6 +13,10 @@ app.use(cors())
 app.use(morgan('dev'))
 app.use(helmet())
 
+// database connection
+import {dbConnection} from '../api-admin-cms/src/config/dbConfig.js'
+dbConnection()
+
 // routers
 app.get('/',(req,res,next)=>{
     res.json({
